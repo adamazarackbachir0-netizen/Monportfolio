@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Portfolio - ADAM MAHAMAT AZARACK</title>
     
     <style>
@@ -11,7 +12,7 @@
             background-color: #f0f4f8; 
             margin: 0;
             font-family: sans-serif;
-            color: #333;
+            color: #333333;
         }
 
         /* Style de ta photo */
@@ -20,7 +21,7 @@
             height: 180px;
             border-radius: 50%;
             object-fit: cover;
-            border: 4px solid #2563eb;
+            border: 4px solid #2539eb;
             display: block;
             margin: 20px auto;
         }
@@ -50,18 +51,37 @@
             margin-top: 10px;
         }
 
-        nav ul {
+        .nav-links {
             list-style: none;
-            display: flex;
+            display: none;
             justify-content: center;
             gap: 20px;
             padding: 0;
         }
-
+        .nav-links.active {
+            display: flex;
+        }
         nav a {
             text-decoration: none;
             color: #2563eb;
             font-weight: bold;
+        }
+        .menu-toggle {
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .menu-toggle:hover {
+            background-color: #1e40af;
+        }
+        .menu-toggle i {
+            transition: transform 0.3s ease;
+        }
+        .menu-toggle:hover i {
+            transform: rotate(90deg);
         }
     </style> <!-- IL MANQUAIT CETTE BALISE DE FERMETURE -->
 </head>
@@ -69,13 +89,14 @@
     <header>
         <nav>
             <div class="logo">ADAM MAHAMAT AZARACK</div>
-            <ul>
+            <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+            <ul class="nav-links">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="apropos.html">À propos</a></li>
                 <li><a href="contacts.html">Contact</a></li>
                 <li><a href="competences.html">Competences</a></li>
                 <li><a href="projets.html">Projets</a></li>
-                <li><a href="languages.html">Langues</a></li>
+                <li><a href="langues.html">Langues</a></li>
             </ul>
         </nav>
     </header>
@@ -128,5 +149,6 @@
     <footer style="text-align: center; padding: 20px;">
         <p>&copy; 2026 - ADAM MAHAMAT AZARACK | Étudiant en Génie Informatique</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
