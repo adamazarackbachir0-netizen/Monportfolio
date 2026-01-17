@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - ADAM MAHAMAT AZARACK</title>
+    
+    <style>
+        /* La couleur de fond de la page */
+        body {
+            background-color: #f0f4f8; 
+            margin: 0;
+            font-family: sans-serif;
+            color: #333;
+        }
+
+        /* Style de ta photo */
+        .photo-profil {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #2563eb;
+            display: block;
+            margin: 20px auto;
+        }
+
+        /* Style du nom en haut */
+        .logo {
+            font-weight: bold;
+            color: #2563eb;
+            font-size: 1.5rem;
+            padding: 10px;
+        }
+
+        /* Centrage du texte principal */
+        #hero {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        /* Style des boutons */
+        .btn {
+            display: inline-block;
+            background-color: #2563eb;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2563eb;
+            font-weight: bold;
+        }
+    </style> <!-- IL MANQUAIT CETTE BALISE DE FERMETURE -->
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">ADAM MAHAMAT AZARACK</div>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+                <li><a href="competences.html">Competences</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="languages.html">Langues</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <!-- Ta photo doit être nommée photo.jpg dans ton dossier -->
+        <img src="photo.jpg" alt="Photo de ADAM" class="photo-profil">
+        
+        <h1>Futur Ingénieur en Informatique</h1>
+        <p>"Etudiant passionné en 1ère année de Génie Informatique. Depuis que j'ai découvert la programmation, je m'intéresse particulièrement à la création de solutions innovantes et à l'architecture des systèmes. Mon objectif est de devenir ingénieur pour relever les défis technologiques de demain."</p>
+        <div class="actions">
+            <a href="#projets" class="btn">Voir mes travaux</a>
+        </div>
+    </section>
+    <section id="contacts" style="padding: 40px; text-align: center; background: white;">
+        <h2>Contactez-moi</h2>
+        <p>Email : <a href="adamazarackbachir0@gmail.com">adam.azarackbachir0@gmail.com</a></p>
+        <p>Numéro de téléphone : +212 7 83 69 83 28</p>
+        <p>Numéro whatsapp : +235 66 41 89 62</p>
+    </section>
+
+    <section id="skills" style="padding: 40px; text-align: center;">
+        <h2>Mes Competences (L1)</h2>
+        <div class="skills-container">
+            <p><strong>C / C++</strong> - Bases de l'algorithmique</p>
+            <p><strong>HTML/CSS</strong> - Création de sites statiques</p>
+            <p><strong>Systèmes</strong> - Architecture PC & Linux</p>
+        </div>
+    </section>
+
+    <section id="projets" style="padding: 40px; text-align: center; background: white;">
+        <h2>Projets Académiques</h2>
+        <article>
+            <h3>Gestion de Stock en C</h3>
+            <p>Développement d'Interface Statique.</p>
+        </article>
+        <article>
+            <h3>Mon Premier Site</h3>
+            <p>Réalisation de mon portfolio professionnel en utilisant HTML5 et CSS3. Ce projet m'a permis d'apprendre à structurer une page web de manière sémantique et à appliquer un design moderne et adaptatif pour tous les écrans..</p>
+        </article>
+    </section>
+
+    <section id="languages" style="padding: 40px; text-align: center; background: white;">
+        <h2>Langues</h2>
+        <p><strong>Arabe</strong> - langue maternelle</p>
+        <p><strong>Français</strong> - Niveau C1</p>
+        <p><strong>Anglais</strong> - Niveau B2</p>
+    </section>
+
+    <footer style="text-align: center; padding: 20px;">
+        <p>&copy; 2026 - ADAM MAHAMAT AZARACK | Étudiant en Génie Informatique</p>
+    </footer>
+</body>
+</html>
